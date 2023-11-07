@@ -49,7 +49,7 @@ For example (using EESSI):
 
 ```bash
 source /cvmfs/pilot.eessi-hpc.org/versions/2023.06/init/bash
-module load ReFrame/4.2.0
+module load ReFrame/4.3.3
 ```
 
 To check whether the ReFrame test library is available, try importing a submodule of the `hpctestlib` Python package:
