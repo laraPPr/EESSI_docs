@@ -108,3 +108,6 @@ extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/eessi_hpc
+extra_javascript:
+  # javascript which generates overview of available software
+  - available_software/javascripts/populate_overview.js
