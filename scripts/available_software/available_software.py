@@ -329,6 +329,7 @@ def generate_software_table_data(software_data: dict, clusters: list) -> list:
     @param clusters: List with all the cluster names
     @return: 1D list with all the data for the table
     """
+    #TODO: add same strucure as https://github.com/laraPPr/EESSI_docs/blob/test_add_script_generate_software/docs/available_software/overview.md to table
     table_data = [" "] + clusters
 
     for module_name, available in list(software_data.items())[::-1]:
