@@ -42,10 +42,20 @@ function populate_overview(json_data) {
 
             // list with all the names of the clusters
             const all_clusters = json.clusters.map(x => {
+		    //Todo: split up the strings of the clusters
+		    console.log(x)
+		    let pathArray = x.split("/")
+		    pathArray = pathArray.slice(7)
+		    console.log(pathArray)
+		    console.log(pathArray[pathArray.length -1])
+		    x = pathArray[pathArray.length -1]
+		    //x = pathArray
                     return ({"title": x})
                 })
+	    console.log(all_clusters)
+            console.log([...[{"title": "name"}], ...all_clusters])
             const table = new DataTable('#overview_table', {
-                columns: [...[{"title": "name"}], ...all_clusters],
+		columns: [...[{"title": "name"}], ...all_clusters],
                 paging: false,
                 columnDefs: [
                     {
@@ -54,6 +64,7 @@ function populate_overview(json_data) {
                     }
                 ]
             });
+            console.log(table)
 
 
             // ADD DATA
@@ -74,6 +85,6 @@ function populate_overview(json_data) {
 // Only start populating the table if the correct page has been loaded.
 document$.subscribe(function() {
     if (document.getElementById("overview_table")) {
-        populate_overview("../available_software/data/json_data.json")
+        populate_overview("../data/json_data.json")
     }
 })
