@@ -1,5 +1,6 @@
-<script src="javascripts/populate_overview.js">
-</script>
+{% block scripts %}
+<script src="javascripts/populate_overview.js"></script>
+{% endblock %}
 
 # Available software (via modules)
 
