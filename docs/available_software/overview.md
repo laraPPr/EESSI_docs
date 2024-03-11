@@ -12,7 +12,7 @@ This table gives an overview of all the available software in EESSI per specific
         </tr>
         </tr>
             <th colspan="3"></th>
-            <th colsapn="1"></th>
+            <th colspan="1"></th>
             <th colspan="2">amd</th>
             <th colspan="2">intel</th>
         </tr>

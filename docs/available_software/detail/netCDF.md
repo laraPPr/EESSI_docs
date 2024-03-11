@@ -18,13 +18,13 @@ The overview below shows which netCDF installations are available per HPC-UGent 
 To start using netCDF, load one of these modules using a `module load` command like:
 
 ```shell
-module load netCDF/4.9.0-gompi-2022b
+module load netCDF/4.9.2-gompi-2023b
 ```
 
-*(This data was automatically generated on Fri, 08 Mar 2024 at 11:18:27 CET)*  
+*(This data was automatically generated on Mon, 11 Mar 2024 at 15:25:05 CET)*  
 
-| |/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/generic|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/neoverse_n1|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/neoverse_v1|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/generic|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/amd/zen2|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/amd/zen3|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/intel/haswell|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/intel/skylake_avx512|
+| |aarch64/generic|aarch64/neoverse_n1|aarch64/neoverse_v1|x86_64/generic|x86_64/amd/zen2|x86_64/amd/zen3|x86_64/intel/haswell|x86_64/intel/skylake_avx512|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|netCDF/4.9.2-gompi-2023b|x|x|x|x|x|x|x|x|
+|netCDF/4.9.2-gompi-2023a|x|x|x|x|x|x|x|x|
 |netCDF/4.9.0-gompi-2022b|x|x|x|x|x|x|x|x|
-|netCDF/4.8.1-gompi-2021b|x|x|x|x|x|x|x|x|
-|netCDF/4.8.0-gompi-2021a|x|x|x|x|x|x|x|x|

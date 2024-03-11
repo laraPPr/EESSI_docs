@@ -18,11 +18,11 @@ The overview below shows which arpack-ng installations are available per HPC-UGe
 To start using arpack-ng, load one of these modules using a `module load` command like:
 
 ```shell
-module load arpack-ng/3.8.0-foss-2022a
+module load arpack-ng/3.8.0-foss-2022b
 ```
 
-*(This data was automatically generated on Fri, 08 Mar 2024 at 11:18:27 CET)*  
+*(This data was automatically generated on Mon, 11 Mar 2024 at 15:25:05 CET)*  
 
-| |/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/generic|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/neoverse_n1|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/neoverse_v1|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/generic|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/amd/zen2|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/amd/zen3|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/intel/haswell|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/intel/skylake_avx512|
+| |aarch64/generic|aarch64/neoverse_n1|aarch64/neoverse_v1|x86_64/generic|x86_64/amd/zen2|x86_64/amd/zen3|x86_64/intel/haswell|x86_64/intel/skylake_avx512|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|arpack-ng/3.8.0-foss-2022a|x|x|x|x|x|x|x|x|
+|arpack-ng/3.8.0-foss-2022b|x|x|x|x|x|x|x|x|

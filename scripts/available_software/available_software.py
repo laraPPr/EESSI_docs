@@ -212,9 +212,9 @@ def clusters_eessi() -> np.ndarray:
     @return: cluster names
     """
     commands = [
-        "find /cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/*/* -maxdepth 0 \\( ! -name 'intel' -a ! "
+        "find /cvmfs/software.eessi.io/versions/2023.06/software/linux/*/* -maxdepth 0 \\( ! -name 'intel' -a ! "
         "-name 'amd' \\) -type d",
-        'find /cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/*/{amd,intel}/* -maxdepth 0  -type d'
+        'find /cvmfs/software.eessi.io/versions/2023.06/software/linux/*/{amd,intel}/* -maxdepth 0  -type d'
     ]
     clusters = np.array([])
 
@@ -330,7 +330,7 @@ def generate_software_table_data(software_data: dict, clusters: list) -> list:
     @return: 1D list with all the data for the table
     """
     #TODO: add same strucure as https://github.com/laraPPr/EESSI_docs/blob/test_add_script_generate_software/docs/available_software/overview.md to table
-    table_data = [" "] + clusters
+    table_data = [" "] + [cluster[57:] for cluster in clusters]
 
     for module_name, available in list(software_data.items())[::-1]:
         row = [module_name]

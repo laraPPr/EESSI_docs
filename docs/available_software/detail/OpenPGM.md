@@ -18,11 +18,11 @@ The overview below shows which OpenPGM installations are available per HPC-UGent
 To start using OpenPGM, load one of these modules using a `module load` command like:
 
 ```shell
-module load OpenPGM/5.2.122-GCCcore-11.3.0
+module load OpenPGM/5.2.122-GCCcore-12.3.0
 ```
 
-*(This data was automatically generated on Fri, 08 Mar 2024 at 11:18:27 CET)*  
+*(This data was automatically generated on Mon, 11 Mar 2024 at 15:25:05 CET)*  
 
-| |/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/generic|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/neoverse_n1|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/aarch64/neoverse_v1|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/generic|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/amd/zen2|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/amd/zen3|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/intel/haswell|/cvmfs/pilot.eessi-hpc.org/versions/2023.06/software/linux/x86_64/intel/skylake_avx512|
+| |aarch64/generic|aarch64/neoverse_n1|aarch64/neoverse_v1|x86_64/generic|x86_64/amd/zen2|x86_64/amd/zen3|x86_64/intel/haswell|x86_64/intel/skylake_avx512|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|OpenPGM/5.2.122-GCCcore-11.3.0|x|x|x|x|x|x|x|x|
+|OpenPGM/5.2.122-GCCcore-12.3.0|x|x|x|x|x|x|x|x|
