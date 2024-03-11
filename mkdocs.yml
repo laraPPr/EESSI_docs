@@ -45,6 +45,8 @@ nav:
     - using_eessi/basic_commands.md
     - using_eessi/building_on_eessi.md
     - using_eessi/eessi_demos.md
+  - Available software:
+    - available_software/overview.md
   - Adding software to EESSI:
     - Overview: adding_software/overview.md
     - adding_software/contribution_policy.md
