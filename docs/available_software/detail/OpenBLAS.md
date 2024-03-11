@@ -21,10 +21,10 @@ To start using OpenBLAS, load one of these modules using a `module load` command
 module load OpenBLAS/0.3.24-GCC-13.2.0
 ```
 
-*(This data was automatically generated on Mon, 11 Mar 2024 at 15:14:38 CET)*  
+*(This data was automatically generated on Mon, 11 Mar 2024 at 15:25:05 CET)*  
 
 | |aarch64/generic|aarch64/neoverse_n1|aarch64/neoverse_v1|x86_64/generic|x86_64/amd/zen2|x86_64/amd/zen3|x86_64/intel/haswell|x86_64/intel/skylake_avx512|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|OpenBLAS/0.3.24-GCC-13.2.0|-|-|-|-|-|-|-|-|
-|OpenBLAS/0.3.23-GCC-12.3.0|-|-|-|-|-|-|-|-|
-|OpenBLAS/0.3.21-GCC-12.2.0|-|-|-|-|-|-|-|-|
+|OpenBLAS/0.3.24-GCC-13.2.0|x|x|x|x|x|x|x|x|
+|OpenBLAS/0.3.23-GCC-12.3.0|x|x|x|x|x|x|x|x|
+|OpenBLAS/0.3.21-GCC-12.2.0|x|x|x|x|x|x|x|x|

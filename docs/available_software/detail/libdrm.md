@@ -21,9 +21,9 @@ To start using libdrm, load one of these modules using a `module load` command l
 module load libdrm/2.4.115-GCCcore-12.3.0
 ```
 
-*(This data was automatically generated on Mon, 11 Mar 2024 at 15:14:38 CET)*  
+*(This data was automatically generated on Mon, 11 Mar 2024 at 15:25:05 CET)*  
 
 | |aarch64/generic|aarch64/neoverse_n1|aarch64/neoverse_v1|x86_64/generic|x86_64/amd/zen2|x86_64/amd/zen3|x86_64/intel/haswell|x86_64/intel/skylake_avx512|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|libdrm/2.4.115-GCCcore-12.3.0|-|-|-|-|-|-|-|-|
-|libdrm/2.4.114-GCCcore-12.2.0|-|-|-|-|-|-|-|-|
+|libdrm/2.4.115-GCCcore-12.3.0|x|x|x|x|x|x|x|x|
+|libdrm/2.4.114-GCCcore-12.2.0|x|x|x|x|x|x|x|x|

@@ -21,8 +21,8 @@ To start using MUMPS, load one of these modules using a `module load` command li
 module load MUMPS/5.6.1-foss-2023a-metis
 ```
 
-*(This data was automatically generated on Mon, 11 Mar 2024 at 15:14:38 CET)*  
+*(This data was automatically generated on Mon, 11 Mar 2024 at 15:25:05 CET)*  
 
 | |aarch64/generic|aarch64/neoverse_n1|aarch64/neoverse_v1|x86_64/generic|x86_64/amd/zen2|x86_64/amd/zen3|x86_64/intel/haswell|x86_64/intel/skylake_avx512|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|MUMPS/5.6.1-foss-2023a-metis|-|-|-|-|-|-|-|-|
+|MUMPS/5.6.1-foss-2023a-metis|x|x|x|x|x|x|x|x|
