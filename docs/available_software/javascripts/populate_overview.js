@@ -42,7 +42,7 @@ function populate_overview(json_data) {
 
             // list with all the names of the clusters
             const all_clusters = json.clusters.map(x => {
-		    //Todo: split up the strings of the clusters
+		    //Todo: split up the strings of the clusters to automate the hierarchie of the table header
 		    console.log(x)
 		    let pathArray = x.split("/")
 		    pathArray = pathArray.slice(7)
