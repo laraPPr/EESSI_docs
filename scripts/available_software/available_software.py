@@ -78,8 +78,9 @@ def main():
 # --------------------------------------------------------------------------------------------------------
 
 def bash_command(cmd: str) -> np.ndarray:
+    bash = os.getenv('SHELL')
     proc = subprocess.run(
-        ['/bin/bash', '-c', cmd],
+        [bash, '-c', cmd],
         encoding="utf-8",
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
