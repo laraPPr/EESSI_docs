@@ -46,6 +46,7 @@ from natsort import natsorted
 # --------------------------------------------------------------------------------------------------------
 
 def main():
+    os.environ["SHELL"] = "/bin/bash"
     current_dir = Path(__file__).resolve()
     project_name = 'docs'
     root_dir = next(
@@ -78,7 +79,7 @@ def main():
 # --------------------------------------------------------------------------------------------------------
 
 def bash_command(cmd: str) -> np.ndarray:
-    bash = os.getenv('SHELL')
+    bash = os.getenv("SHELL")
     proc = subprocess.run(
         [bash, '-c', cmd],
         encoding="utf-8",

@@ -1,4 +1,1 @@
-/etc/modulefiles/vsc:
-cluster/dialga
-cluster/pikachu
-cluster/default
+/cvmfs/software.eessi.io/versions/2023.06/software/linux/aarch64/generic

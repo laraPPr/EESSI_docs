@@ -11,5 +11,9 @@ cmd="$2"
 
 # Emulate find command.
 if echo "$cmd" | grep -q -E "find"; then
-   cat "${MOCK_FILE_AVAIL_CLUSTER}" >&2
+   if echo "$cmd" | grep -q -E "amd,intel"; then
+       cat "${MOCK_FILE_AVAIL_CLUSTER_AMD_INTEL}" >&1
+   else
+       cat "${MOCK_FILE_AVAIL_CLUSTER}" >&1
+   fi
 fi
