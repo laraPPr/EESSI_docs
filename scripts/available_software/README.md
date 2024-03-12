@@ -99,5 +99,5 @@ This does multiple things:
 3. Set the output file for the `module avail cluster/` to the `MOCK_FILE_AVAIL_CLUSTER` variable.
    The actual output can be found in the `data/data_avail_cluster_simple.txt` file.
 4. Set the swap files output to the `MOCK_FILE_SWAP` variable.
-   Files with swap outut will have the `data/data_swap_CLUSTER.txt`.
+   Files with swap output will have the `data/data_swap_CLUSTER.txt`.
    For example, `data/data_swap_pikachu.txt` could be a possible file.

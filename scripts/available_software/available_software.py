@@ -98,7 +98,7 @@ def module(*args, filter_fn=lambda x: x) -> np.ndarray:
     Function to run "module" commands.
 
     @param args: Extra arguments for the module command.
-    @param filter_fn: Filter function on the ouput.
+    @param filter_fn: Filter function on the output.
     @return: Array with the output of the module command.
     """
     lmod = os.getenv('LMOD_CMD')
@@ -247,7 +247,7 @@ def modules_eessi() -> dict:
 
 def get_extra_info_eessi(json_data) -> dict:
     """
-    add Description, homepage and a list of extentions (only for software with extensions)
+    add Description, homepage and a list of extensions (only for software with extensions)
     @return: Dictionary with all the modules and their site_packages
     """
     modules = json_data['software']
@@ -330,7 +330,7 @@ def generate_software_table_data(software_data: dict, clusters: list) -> list:
     @param clusters: List with all the cluster names
     @return: 1D list with all the data for the table
     """
-    #TODO: add same strucure as https://github.com/laraPPr/EESSI_docs/blob/test_add_script_generate_software/docs/available_software/overview.md to table
+    #TODO: add same structure as https://github.com/laraPPr/EESSI_docs/blob/test_add_script_generate_software/docs/available_software/overview.md to table
     table_data = [" "] + [cluster[57:] for cluster in clusters]
 
     for module_name, available in list(software_data.items())[::-1]:
