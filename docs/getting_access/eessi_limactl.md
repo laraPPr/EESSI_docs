@@ -216,3 +216,49 @@ CPUS=$(sysctl hw.physicalcpu | awk '{print $2}')
 limactl create --cpus $CPUS --memory $RAM --name eessi ./eessi.yaml
 limactl list
 ```
+
+### Advanced: Use X11 forwarding
+
+You have to add the following to the yaml file
+```
+ssh:
+  forwardX11: true
+  forwardAgent: true
+video:
+  vnc:
+    display: null
+```
+
+Before being able to login with xforwarding you will have to install xauth on the vm.
+```
+limactl shell NAME_VM
+```
+And than install xauth
+```
+# For Debian based (rgl error is not limited to redhat based)
+sudo apt-get install xauth
+# For Red-Hat based (have not been able to test since rgl Rpackage seems to be broken on Red-Hat based systems
+sudo yum install xauth 
+```
+
+To be able to the xforwarding you cannot access the vm via `limactl shell` but you have to ssh into the vm. Before you can ssh into the the vm you will need to know the port and host. You can find these by running the following commands.
+```
+limactl list
+```
+
+When you know the address of the vm you can ssh in with xforwarding.
+``` { .bash .copy }
+ssh -X -p $PORT -i ~/.lima/_config/user -o NoHostAuthenticationForLocalhost=yes localhost
+```
+
+When you first login you will likely see the following warning
+```
+/usr/bin/xauth:  file /home/lara.linux/.Xauthority does not exist
+```
+When you log out and login again the warning will likely be gone.
+
+
+
+```
+```
+
