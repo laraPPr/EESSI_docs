@@ -45,8 +45,8 @@ All CUDA-enabled software in EESSI expects the CUDA drivers to be available in a
 In addition, installations of the CUDA SDK included EESSI are stripped down to the files that we are allowed to redistribute;
 all other files are replaced by symbolic links that point to another specific subdirectory of `host_injections`. For example:
 ```
-$ ls -l /cvmfs/software.eessi.io/versions/2023.06/software/linux/x86_64/amd/zen3/software/CUDA/12.1.1/bin/nvcc
-lrwxrwxrwx 1 cvmfs cvmfs 109 Dec 21 14:49 /cvmfs/software.eessi.io/versions/2023.06/software/linux/x86_64/amd/zen3/software/CUDA/12.1.1/bin/nvcc -> /cvmfs/software.eessi.io/host_injections/2023.06/software/linux/x86_64/amd/zen3/software/CUDA/12.1.1/bin/nvcc
+$ ls -l /cvmfs/software.eessi.io/versions/2023.06/software/linux/$EESSI_SOFTWARE_SUBDIR/$EESSI_ACCELERATOR_TARGET/software/CUDA/12.1.1/bin/nvcc
+lrwxrwxrwx 1 cvmfs cvmfs 109 Dec 21 14:49 /cvmfs/software.eessi.io/versions/2023.06/software/linux/x86_64/amd/zen3/accel/nvidia/cc80/software/CUDA/12.1.1/bin/nvcc -> /cvmfs/software.eessi.io/host_injections/2023.06/software/linux/x86_64/software/CUDA/12.1.1/bin/nvcc
 ```
 
 If the corresponding full installation of the CUDA SDK is available there, the CUDA installation included in EESSI can be used to build CUDA software.

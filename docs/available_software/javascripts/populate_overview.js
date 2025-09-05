@@ -24,11 +24,11 @@ function populate_overview(json_data) {
             // list with all the names of the targets
             const all_targets = json.targets.map(x => {
 		    //Todo: split up the strings of the targets to automate the hierarchy of the table header
-		    console.log(x)
+		    // console.log(x)
 		    let pathArray = x.split("/")
 		    pathArray = pathArray.slice(7)
-		    console.log(pathArray)
-		    console.log(pathArray[pathArray.length -1])
+		    // console.log(pathArray)
+		    // console.log(pathArray[pathArray.length -1])
 		    x = pathArray[pathArray.length -1]
 		    //x = pathArray
                     return ({"title": x})
@@ -41,11 +41,13 @@ function populate_overview(json_data) {
                 columnDefs: [
                     {
                         targets: "_all",
+                        //targets: 0,
                         className: 'dt-body-center'
+                        //type: 'alt-string'
                     }
                 ]
             });
-            console.log(table)
+            // console.log(table)
 
 
             // ADD DATA
@@ -55,7 +57,10 @@ function populate_overview(json_data) {
             // These booleans indicates if the software is available on the corresponding cluster.
             for (const [software, list_available] of Object.entries(json.modules)) {
                 let new_row = [`<a href="../detail/${software}">${software}</a>`];
-                list_available.forEach(bool => new_row.push(bool ? "x" : "-"));
+                console.log(new_row)
+                // app to figure the color conversion in css https://codepen.io/sosuke/pen/Pjoqqp
+                let img = `<img width="40px" src="../../img/emojis/cpu-icon.png" alt='CPU' filter: invert(29%) sepia(49%) saturate(6101%) hue-rotate(1deg) brightness(101%) contrast(107%);>`
+                list_available.forEach(bool => new_row.push(bool ? `<img width="20%" src="../../img/emojis/cpu-icon.png" alt='CPU' style="filter: invert(29%) sepia(49%) saturate(6101%) hue-rotate(1deg) brightness(101%) contrast(107%);">` : "-"));
                 new_rows.push(new_row);
             }
 

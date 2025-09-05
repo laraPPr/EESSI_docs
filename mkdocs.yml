@@ -146,6 +146,7 @@ extra_javascript:
   - https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js
   - available_software/javascripts/populate_overview.js
   - https://cdn.datatables.net/plug-ins/2.2.2/pagination/bootstrap_input.js
+  - https://cdn.datatables.net/plug-ins/2.3.3/sorting/alt-string.js
 extra_css:
   # CSS for popultate_overview
   - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
